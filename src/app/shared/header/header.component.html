@@ -1,0 +1,37 @@
+<p>
+    <mat-toolbar color="primary">
+        <button (click)="toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>My App</span>
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>help_outline</mat-icon>
+                    </button>
+                </li>
+                <li>
+                     <button mat-button [matMenuTriggerFor]="menu">
+                        <button mat-icon-button>
+                            <mat-icon>person_outline</mat-icon>
+                        </button>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <button mat-icon-button>
+                                <mat-icon>exit_to_app</mat-icon>sign out
+                            </button>
+                        </button>
+                        
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar>
+</p>

@@ -1,0 +1,13 @@
+.parentDiv{
+    padding: 20px;
+}
+
+/* .card
+{
+    display: flexbox;
+} */
+
+mat-card app-card
+{
+    height: 10px;
+}
